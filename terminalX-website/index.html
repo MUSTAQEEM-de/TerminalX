@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TerminalX — An AI-powered natural-language automation layer for Linux."
+    >
+
+    <title>TerminalX — AI-Powered Linux Assistant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="#" class="logo">
+            <span class="logo-symbol">&gt;_</span>
+            <span>Terminal<span class="logo-x">X</span></span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#security">Security</a>
+            <a href="#demo">Demo</a>
+            <a href="#download">Download</a>
+        </nav>
+
+        <div class="nav-actions">
+
+    <a
+        href="https://github.com/MUSTAQEEM-de/TerminalX"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+    >
+        GitHub
+    </a>
+
+    <a href="#download" class="nav-download">
+        Download
+    </a>
+
+</div>
+
+        <button class="mobile-menu" id="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                AI-Powered Linux Automation
+            </div>
+
+            <h1>
+                Control Linux
+                <span>with Natural Language.</span>
+            </h1>
+
+            <p class="hero-description">
+                TerminalX lets you perform Linux tasks without memorizing
+                complex commands. Describe what you want. TerminalX handles
+                the rest — safely and intelligently.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#download" class="btn btn-primary">
+                    Download TerminalX
+                    <span>↓</span>
+                </a>
+
+                <a href="#demo" class="btn btn-secondary">
+                    Try the Demo
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="hero-meta">
+                <span>✓ Local execution</span>
+                <span>✓ Security-first</span>
+                <span>✓ Verified results</span>
+            </div>
+
+        </div>
+
+
+        <!-- HERO TERMINAL -->
+
+        <div class="hero-terminal">
+
+            <div class="terminal-window">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-title">
+                        terminalx
+                    </div>
+
+                    <div class="terminal-status">
+                        ● connected
+                    </div>
+
+                </div>
+
+                <div class="terminal-body" id="heroTerminal">
+
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span>terminalx</span>
+                    </div>
+
+                    <div class="terminal-output">
+                        TerminalX v1.0
+                    </div>
+
+                    <div class="terminal-output muted">
+                        Natural-language Linux assistant
+                    </div>
+
+                    <br>
+
+                    <div class="terminal-line">
+                        <span class="prompt">TerminalX &gt;</span>
+                        <span id="typingText"></span>
+                        <span class="cursor"></span>
+                    </div>
+
+                    <div id="terminalResponse"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PROBLEM
+========================================= -->
+
+<section class="section problem-section">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            THE PROBLEM
+        </div>
+
+        <h2>
+            Linux is powerful.
+            <span>Remembering every command shouldn't be.</span>
+        </h2>
+
+        <p class="section-description">
+            Linux gives users incredible control over their systems, but
+            accessing that power often requires remembering hundreds of
+            commands, flags, syntax rules, and permission requirements.
+        </p>
+
+
+        <div class="comparison">
+
+            <div class="comparison-card traditional">
+
+                <div class="comparison-header">
+                    <span class="comparison-icon">⌨</span>
+                    Traditional Linux
+                </div>
+
+                <div class="comparison-flow">
+
+                    <div>User knows the goal</div>
+                    <span>↓</span>
+
+                    <div>Search documentation</div>
+                    <span>↓</span>
+
+                    <div>Find the command</div>
+                    <span>↓</span>
+
+                    <div>Understand flags</div>
+                    <span>↓</span>
+
+                    <div>Handle permissions</div>
+                    <span>↓</span>
+
+                    <div>Execute & verify</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="comparison-divider">
+                VS
+            </div>
+
+
+            <div class="comparison-card terminalx-card">
+
+                <div class="comparison-header">
+                    <span class="comparison-icon">✦</span>
+                    TerminalX
+                </div>
+
+                <div class="comparison-flow">
+
+                    <div>Describe your goal</div>
+                    <span>↓</span>
+
+                    <div>AI understands intent</div>
+                    <span>↓</span>
+
+                    <div>Security validation</div>
+                    <span>↓</span>
+
+                    <div>Local execution</div>
+                    <span>↓</span>
+
+                    <div class="highlight-flow">
+                        ✓ Verified result
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FEATURES
+========================================= -->
+
+<section class="section" id="features">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            FEATURES
+        </div>
+
+        <h2>
+            Your intent.
+            <span>Linux's power.</span>
+        </h2>
+
+        <p class="section-description">
+            TerminalX combines natural-language understanding with a
+            controlled execution architecture.
+        </p>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-number">01</div>
+
+                <div class="feature-icon">✦</div>
+
+                <h3>Natural Language</h3>
+
+                <p>
+                    Describe what you want in plain language instead of
+                    remembering complex Linux syntax.
+                </p>
+
+                <div class="feature-example">
+                    "Install Git"
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">02</div>
+
+                <div class="feature-icon">⌘</div>
+
+                <h3>AI Intent Understanding</h3>
+
+                <p>
+                    TerminalX converts your request into a structured,
+                    controlled action.
+                </p>
+
+                <div class="feature-example">
+                    install_package
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">03</div>
+
+                <div class="feature-icon shield-icon">◇</div>
+
+                <h3>Security First</h3>
+
+                <p>
+                    The AI never receives unrestricted access to your
+                    Linux shell.
+                </p>
+
+                <div class="feature-example">
+                    AI → Security Gate
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">04</div>
+
+                <div class="feature-icon">✓</div>
+
+                <h3>Verified Results</h3>
+
+                <p>
+                    TerminalX verifies the actual system state instead
+                    of blindly trusting command output.
+                </p>
+
+                <div class="feature-example">
+                    ✓ verified
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">05</div>
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Local Execution</h3>
+
+                <p>
+                    Approved operations are executed by the local
+                    TerminalX agent on your Linux machine.
+                </p>
+
+                <div class="feature-example">
+                    Your machine → Linux
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">06</div>
+
+                <div class="feature-icon">!</div>
+
+                <h3>Permission Aware</h3>
+
+                <p>
+                    Privileged operations clearly tell you when elevated
+                    permissions are required.
+                </p>
+
+                <div class="feature-example">
+                    SUDO REQUIRED
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     HOW IT WORKS
+========================================= -->
+
+<section class="section how-section" id="how-it-works">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            HOW IT WORKS
+        </div>
+
+        <h2>
+            From intent
+            <span>to verified execution.</span>
+        </h2>
+
+
+        <div class="architecture-flow">
+
+            <div class="flow-step">
+
+                <div class="flow-number">01</div>
+
+                <div class="flow-icon">⌨</div>
+
+                <h3>Natural Language</h3>
+
+                <p>
+                    Tell TerminalX what you want.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">→</div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-number">02</div>
+
+                <div class="flow-icon">✦</div>
+
+                <h3>AI Intent</h3>
+
+                <p>
+                    Your request becomes a structured action.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">→</div>
+
+
+            <div class="flow-step security-step">
+
+                <div class="flow-number">03</div>
+
+                <div class="flow-icon">◇</div>
+
+                <h3>Security Gate</h3>
+
+                <p>
+                    Every action is validated before execution.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">→</div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-number">04</div>
+
+                <div class="flow-icon">⚙</div>
+
+                <h3>Local Execution</h3>
+
+                <p>
+                    Approved operations run on your machine.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">→</div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-number">05</div>
+
+                <div class="flow-icon">✓</div>
+
+                <h3>Verification</h3>
+
+                <p>
+                    TerminalX confirms the result.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SECURITY
+========================================= -->
+
+<section class="section security-section" id="security">
+
+    <div class="section-container">
+
+        <div class="security-grid">
+
+            <div class="security-content">
+
+                <div class="section-label">
+                    SECURITY
+                </div>
+
+                <h2>
+                    AI that knows
+                    <span>when not to execute.</span>
+                </h2>
+
+                <p>
+                    TerminalX is not a direct bridge from an LLM to your
+                    shell. Requests pass through a controlled action
+                    registry and deterministic security layer before
+                    anything touches your system.
+                </p>
+
+                <div class="security-points">
+
+                    <div>
+                        <span>✓</span>
+                        No unrestricted shell access
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Structured actions only
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Explicit confirmation
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Post-execution verification
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="security-terminal">
+
+                <div class="security-terminal-header">
+                    <span class="security-status-dot"></span>
+                    SECURITY GATE
+                </div>
+
+                <div class="security-terminal-body">
+
+                    <div class="security-request">
+                        <span class="prompt">TerminalX &gt;</span>
+                        delete everything from my computer
+                    </div>
+
+                    <div class="security-analysis">
+                        <span>Analyzing request...</span>
+                        <span>Potentially destructive operation</span>
+                    </div>
+
+                    <div class="blocked-box">
+
+                        <div class="blocked-icon">×</div>
+
+                        <div>
+                            <strong>OPERATION BLOCKED</strong>
+
+                            <p>
+                                This request represents a potentially
+                                destructive system-wide operation.
+                            </p>
+
+                            <small>
+                                No changes were made.
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     COMMAND EXAMPLES
+========================================= -->
+
+<section class="section examples-section">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            NATURAL LANGUAGE
+        </div>
+
+        <h2>
+            Stop remembering commands.
+            <span>Start describing intent.</span>
+        </h2>
+
+
+        <div class="command-list">
+
+            <div class="command-row">
+
+                <div class="command-old">
+                    <span>Traditional</span>
+                    <code>sudo apt install git</code>
+                </div>
+
+                <div class="command-arrow">→</div>
+
+                <div class="command-new">
+                    <span>TerminalX</span>
+                    <strong>"Install Git"</strong>
+                </div>
+
+            </div>
+
+
+            <div class="command-row">
+
+                <div class="command-old">
+                    <span>Traditional</span>
+                    <code>free -h</code>
+                </div>
+
+                <div class="command-arrow">→</div>
+
+                <div class="command-new">
+                    <span>TerminalX</span>
+                    <strong>"Show my RAM usage"</strong>
+                </div>
+
+            </div>
+
+
+            <div class="command-row">
+
+                <div class="command-old">
+                    <span>Traditional</span>
+                    <code>systemctl restart nginx</code>
+                </div>
+
+                <div class="command-arrow">→</div>
+
+                <div class="command-new">
+                    <span>TerminalX</span>
+                    <strong>"Restart nginx"</strong>
+                </div>
+
+            </div>
+
+
+            <div class="command-row">
+
+                <div class="command-old">
+                    <span>Traditional</span>
+                    <code>python3 -m venv myenv</code>
+                </div>
+
+                <div class="command-arrow">→</div>
+
+                <div class="command-new">
+                    <span>TerminalX</span>
+                    <strong>"Create a Python environment called myenv"</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     INTERACTIVE DEMO
+========================================= -->
+
+<section class="section demo-section" id="demo">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            INTERACTIVE DEMO
+        </div>
+
+        <h2>
+            See TerminalX
+            <span>in action.</span>
+        </h2>
+
+        <p class="section-description">
+            Try a few example requests and see how TerminalX interprets,
+            validates, and verifies them.
+        </p>
+
+
+        <div class="demo-container">
+
+            <div class="demo-sidebar">
+
+                <p>TRY AN EXAMPLE</p>
+
+                <button
+                    class="demo-prompt active"
+                    data-demo="ram"
+                >
+                    Show my RAM usage
+                </button>
+
+                <button
+                    class="demo-prompt"
+                    data-demo="folder"
+                >
+                    Create a folder called projects
+                </button>
+
+                <button
+                    class="demo-prompt"
+                    data-demo="git"
+                >
+                    Install Git
+                </button>
+
+                <button
+                    class="demo-prompt"
+                    data-demo="nginx"
+                >
+                    Restart nginx
+                </button>
+
+                <button
+                    class="demo-prompt"
+                    data-demo="blocked"
+                >
+                    Delete everything
+                </button>
+
+            </div>
+
+
+            <div class="demo-terminal">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-title">
+                        terminalx-demo
+                    </div>
+
+                </div>
+
+                <div
+                    class="demo-terminal-body"
+                    id="demoOutput"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="demo-note">
+            Interactive frontend demonstration — no commands are executed
+            on your device.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     DOWNLOAD
+========================================= -->
+
+<section class="section download-section" id="download">
+
+    <div class="download-glow"></div>
+
+    <div class="section-container">
+
+        <div class="download-content">
+
+            <div class="section-label">
+                GET TERMINALX
+            </div>
+
+            <h2>
+                Bring TerminalX
+                <span>to your machine.</span>
+            </h2>
+
+            <p>
+                Run TerminalX locally and give your Linux terminal a
+                natural-language interface.
+            </p>
+
+            <div class="download-buttons">
+
+                <!-- Replace # with actual release URL later -->
+                <a href="#" class="btn btn-primary download-btn">
+                    Download TerminalX
+                    <span>↓</span>
+                </a>
+
+                <!-- Replace with actual documentation URL -->
+                <a href="#" class="btn btn-secondary">
+                    Installation Guide
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="platform-info">
+
+                <div>
+                    <span>Platform</span>
+                    <strong>Linux</strong>
+                </div>
+
+                <div>
+                    <span>Target</span>
+                    <strong>Ubuntu / Debian</strong>
+                </div>
+
+                <div>
+                    <span>Runtime</span>
+                    <strong>Python 3.11+</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="install-terminal">
+
+            <div class="terminal-header">
+
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-title">
+                    installation
+                </div>
+
+            </div>
+
+            <div class="install-body">
+
+                <div>
+                    <span class="prompt">$</span>
+                    git clone https://github.com/your-repo/terminalx.git
+                </div>
+
+                <div>
+                    <span class="prompt">$</span>
+                    cd terminalx
+                </div>
+
+                <div>
+                    <span class="prompt">$</span>
+                    pip install -r requirements.txt
+                </div>
+
+                <div>
+                    <span class="prompt">$</span>
+                    python -m terminalx
+                </div>
+
+                <br>
+
+                <div class="success-line">
+                    ✓ TerminalX ready.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     TECH STACK
+========================================= -->
+
+<section class="section tech-section">
+
+    <div class="section-container">
+
+        <div class="section-label">
+            BUILT WITH
+        </div>
+
+        <h2>
+            Simple architecture.
+            <span>Serious execution.</span>
+        </h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-item">
+                <strong>Python</strong>
+                <span>3.11+</span>
+            </div>
+
+            <div class="tech-item">
+                <strong>Claude</strong>
+                <span>Structured tool use</span>
+            </div>
+
+            <div class="tech-item">
+                <strong>Linux</strong>
+                <span>Local execution</span>
+            </div>
+
+            <div class="tech-item">
+                <strong>psutil</strong>
+                <span>System information</span>
+            </div>
+
+            <div class="tech-item">
+                <strong>subprocess</strong>
+                <span>Safe execution</span>
+            </div>
+
+            <div class="tech-item">
+                <strong>shell=False</strong>
+                <span>Security boundary</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+
+<section class="final-cta">
+
+    <div class="cta-glow"></div>
+
+    <div class="section-container">
+
+        <div class="cta-box">
+
+            <div class="section-label">
+                TERMINALX
+            </div>
+
+            <h2>
+                Stop memorizing commands.
+            </h2>
+
+            <p>
+                Start describing what you want Linux to do.
+            </p>
+
+            <div class="hero-buttons">
+
+    <a href="#download" class="btn btn-primary">
+        Get TerminalX
+        <span>→</span>
+    </a>
+
+    <a
+        href="https://github.com/MUSTAQEEM-de/TerminalX"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+    >
+        View on GitHub
+        <span>↗</span>
+    </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <span class="logo-symbol">&gt;_</span>
+                <span>Terminal<span class="logo-x">X</span></span>
+            </a>
+
+            <p>
+                AI-powered natural-language automation for Linux.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#security">Security</a>
+    <a href="#download">Download</a>
+
+    <a
+        href="https://github.com/MUSTAQEEM-de/TerminalX"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        GitHub
+    </a>
+
+</div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 TerminalX
+            </span>
+
+            <span>
+                Built for Linux developers.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
